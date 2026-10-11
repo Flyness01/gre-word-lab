@@ -44,4 +44,4 @@ Coverage always refers to the selected eligible set: definition-only practice ca
 ## Screenshot additions
 All 210 words transcribed from the supplied screenshot are tagged in the **Screenshot additions · 210 words** collection. 122 were new; 88 were merged with existing entries, preserving word IDs and saved progress. The collection now totals 3,128 practice terms. Concise study definitions were authored for screenshot words lacking definitions; the screenshot itself supplies words only. Existing supplied definitions remain intact. The apparent source typo “all-ecompassing” is normalized to “all-encompassing.” These entries participate in exhaustive coverage passes. Mixed practice selects eligible modes; double-duty contrasts still require an everyday/GRE meaning pair.
 
-Word bank replaces typing: choose from six words using the meaning/synonym clues and a first-letter/letter-count hint. Saved progress from the former typing mode is retained.
+Word bank replaces typing: choose from six words using the meaning/synonym clues. No first-letter or word-length hints are shown. Saved progress from the former typing mode is retained.
