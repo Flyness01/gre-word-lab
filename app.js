@@ -9,9 +9,9 @@ state.preferences=state.preferences||{deck:'fullsyn',group:'all'};
 $('#deck').value=state.preferences.deck||'fullsyn';$('#group').value=state.preferences.group||'all';
 function isMain(w){return w.kind==='headword'&&w.synonyms.length>0}
 function scopeKey(){return [$('#deck').value,$('#group').value,mode].join('/')}
-function cycleFor(available){const key=scopeKey();let c=state.cycles[key];if(!c||!Array.isArray(c.completed))c=state.cycles[key]={pass:1,completed:[],turns:0};const ids=new Set(available.map(w=>w.word));c.completed=c.completed.filter(w=>ids.has(w));if(available.length&&available.every(w=>c.completed.includes(w.word))){c.pass++;c.completed=[]}return c}
+function cycleFor(available){const key=scopeKey();let c=state.cycles[key];if(!c||!Array.isArray(c.completed))c=state.cycles[key]={pass:1,completed:[],turns:0};const ids=new Set(available.map(w=>w.word));c.completed=c.completed.filter(w=>ids.has(w));const completed=new Set(c.completed);if(available.length&&available.every(w=>completed.has(w.word))){c.pass++;c.completed=[]}return c}
 function coverageText(available,c){return `Pass ${c.pass} · ${c.completed.length} / ${available.length} covered · ${available.length-c.completed.length} remaining`}
-function chooseScheduled(available){const c=cycleFor(available),remaining=available.filter(w=>!c.completed.includes(w.word));
+function chooseScheduled(available){const c=cycleFor(available),completed=new Set(c.completed),remaining=available.filter(w=>!completed.has(w.word));
  // One review slot per four answers; three coverage slots guarantee forward movement.
  const review=c.turns%4===3?available.filter(w=>{const x=state.words[w.word];return x&&x.lastWrong&&state.answers-(x.lastAt||0)>=3&&w.word!==lastWord}):[];
  let candidates=review.length?review:remaining;const extraReview=review.length>0;
