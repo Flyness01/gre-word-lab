@@ -40,3 +40,6 @@ Coverage always refers to the selected eligible set: definition-only practice ca
 
 ## Import counts
 852 distinct imported headwords; 817 have synonym associations. Cleaning parenthetical annotations and excluding prose fragments leaves 2,154 additional synonym terms, for 3,006 total practice terms. ETS contributes 5,012 reference rows and 6,345 distinct word forms, many overlapping the practice vocabulary. Those forms are not automatically assigned invented definitions. Source typos and loose associations may remain.
+
+## Screenshot additions
+All 210 words transcribed from the supplied screenshot are tagged in the **Screenshot additions · 210 words** collection. 122 were new; 88 were merged with existing entries, preserving word IDs and saved progress. The collection now totals 3,128 practice terms. Concise study definitions were authored for screenshot words lacking definitions; the screenshot itself supplies words only. Existing supplied definitions remain intact. The apparent source typo “all-ecompassing” is normalized to “all-encompassing.” These entries participate in exhaustive coverage passes. Mixed practice selects eligible modes; double-duty contrasts still require an everyday/GRE meaning pair.
