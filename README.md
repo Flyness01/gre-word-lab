@@ -11,7 +11,7 @@ A buildless, browser-only site for GitHub Pages. No API keys or installation nee
 For a local preview, run `python3 -m http.server 8080` inside this folder and open `http://localhost:8080`.
 
 ## Practice
-Eight modes: mixed practice, definition choice, reverse definition, synonym choice, two-answer synonyms, typed recall, double-duty contrasts, and self-rated flashcards. Sessions contain ten questions. Use the word collection and group filters to focus. ETS priority selects matched study headwords with source frequencies of at least three.
+Eight modes: mixed practice, definition choice, reverse definition, synonym choice, two-answer synonyms, word-bank choices, double-duty contrasts, and self-rated flashcards. Sessions contain ten questions. Use the word collection and group filters to focus. ETS priority selects matched study headwords with source frequencies of at least three.
 
 Answers receive immediate explanations. Misses are due after five minutes; correct streaks schedule review after 1, 3, 7, 14, then 30 days. Missed words also remain in the review collection until answered correctly. All progress, bookmarks, and personal memory hooks stay in browser localStorage. Export/import JSON backups in My progress to move devices. Clearing browser data removes saved progress.
 
@@ -43,3 +43,5 @@ Coverage always refers to the selected eligible set: definition-only practice ca
 
 ## Screenshot additions
 All 210 words transcribed from the supplied screenshot are tagged in the **Screenshot additions · 210 words** collection. 122 were new; 88 were merged with existing entries, preserving word IDs and saved progress. The collection now totals 3,128 practice terms. Concise study definitions were authored for screenshot words lacking definitions; the screenshot itself supplies words only. Existing supplied definitions remain intact. The apparent source typo “all-ecompassing” is normalized to “all-encompassing.” These entries participate in exhaustive coverage passes. Mixed practice selects eligible modes; double-duty contrasts still require an everyday/GRE meaning pair.
+
+Word bank replaces typing: choose from six words using the meaning/synonym clues and a first-letter/letter-count hint. Saved progress from the former typing mode is retained.
